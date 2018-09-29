@@ -30,6 +30,6 @@ Pietra.users.get(a.id).send({
 "color": 0xf1450c,
             
 "image": { "url": xd  }}
-        }).then(sentMsg => sentMsg.delete(600000));
+        })
 			 )
 };
