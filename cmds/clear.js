@@ -3,9 +3,9 @@ exports.run = (Pietra, message, args) => {
  if (!message.member.hasPermission('MANAGE_MESSAGES'))
  return message.channel.send(`:x:  | Desculpe ${message.author}, este comando está disponível apenas para cargos de Gerenciamento de mensagens do servidor.`);
 
-        
-            let user   = message.mentions.users.size > 0 ? message.mentions.users.first() : null,
-            amount = isNaN(Number(args[1])) ? Number(args[2]) : Number(args[1]);
+            let del = message.content.split(' '),
+            user   = message.mentions.users.size > 0 ? message.mentions.users.first() : null,
+            amount = isNaN(Number(del[1])) ? Number(del[2]) : Number(del[1]);
         
         if (!amount) 
             return message.channel.send(`:x: ${message.author}! Especifique a quantidade de mensagens a serem deletadas. Sendo **100** o máximo.`);
