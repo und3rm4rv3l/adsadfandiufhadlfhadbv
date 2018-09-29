@@ -4,8 +4,7 @@ exports.run = (Pietra, message, args) => {
  return message.channel.send(`:x:  | Desculpe ${message.author}, este comando está disponível apenas para cargos de Gerenciamento de mensagens do servidor.`);
 
         
-           let args   = message.content.split(' '),
-            user   = message.mentions.users.size > 0 ? message.mentions.users.first() : null,
+            let user   = message.mentions.users.size > 0 ? message.mentions.users.first() : null,
             amount = isNaN(Number(args[1])) ? Number(args[2]) : Number(args[1]);
         
         if (!amount) 
