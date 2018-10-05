@@ -10,7 +10,7 @@ if (!['244489368717230090'].includes(message.author.id)) return;
      message.channel.sendCode("x1", evalued);
     } catch(err) {
           message.channel.send({embed: 
-          {description: ` \`\`\`ERROR\`\`\` **Código >** \`\`\`Js\n${suffix}\n\`\`\` \`\`\`xl\n${err}\n\`\`\` `,
+          {description: ` \`ERROR\`\n**Código >**\n\`\`\`Js\n${args}\n\`\`\`\n\`\`\`xl\n${err}\n\`\`\` `,
           color: 0x4959e9}});
   
 
