@@ -1,7 +1,7 @@
 exports.run = (Pietra, message, args) => {
 if (!['244489368717230090'].includes(message.author.id)) return;
     try {
-      var code = suffix;
+      var code = args;
       var evalued = eval(code);
 
       if (typeof evalued !== "string")
