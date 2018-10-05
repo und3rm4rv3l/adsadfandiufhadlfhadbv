@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 
 exports.run = (Pietra, message, args) => {
     
-	if (!['244489368717230090', '472533471546572800', '481829760369033228', '464521999277096991', '377252297912221706', '447775548685680653', '487090463338397696'].includes(message.author.id)) 
+	if (!['244489368717230090', '472533471546572800', '481829760369033228', '464521999277096991', '377252297912221706', '447775548685680653', '487090463338397696','393211390413766658'].includes(message.author.id)) 
 	return  message.channel.send(`${message.author} Comando registro! Apenas usuários **Owners** e **Sub-Owners** podem usá-lo.`);
 
 	
