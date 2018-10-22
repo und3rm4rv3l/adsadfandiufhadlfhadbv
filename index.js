@@ -40,5 +40,5 @@ Pietra.user.setPresence({
 Pietra.login(process.env.atapo);
 
 Pietra.on('ready', async () => {
-    console.log("BAD VIBES ON!");
+    console.log("Project Legends ON!");
 });
