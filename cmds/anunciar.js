@@ -27,7 +27,7 @@ Pietra.users.get(a.id).send({
     
 "description": `${razaod}`,
 
-"color": 0xf1450c,
+"color": 16716357,
             
 "image": { "url": xd  }}
         })
