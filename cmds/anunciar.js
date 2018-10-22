@@ -3,14 +3,14 @@ const Discord = require("discord.js");
 
 exports.run = (Pietra, message, args) => {
     
-	if (!['244489368717230090', '472533471546572800', '481829760369033228', '464521999277096991', '377252297912221706', '447775548685680653', '487090463338397696','393211390413766658'].includes(message.author.id)) 
-	return  message.channel.send(`${message.author} Comando registro! Apenas usuários **Owners** e **Sub-Owners** podem usá-lo.`);
+	if (!['244489368717230090', '314966364873818112'].includes(message.author.id)) 
+	return  message.channel.send(`${message.author} Comando restritro! Apenas usuários autorizados podem usá-lo.`);
 
 	
     const args2 = message.content.split(" ").slice(1); 
     const sayMessage = args2.join(" "); 
    
-    if (!sayMessage) return message.reply('Você esqueceu de colocar o aviso!')
+    if (!sayMessage) return message.reply('Você esqueceu de colocar o aviso! **Modo de uso:** pl!anunciar <link da imagem> <texto>')
     message.channel.send(` Ok ${message.author}! O aviso está sendo enviado...`)
     
     let razaod = args.slice(1).join(' ');
