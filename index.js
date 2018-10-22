@@ -31,7 +31,7 @@ Pietra.on("message", message => {
 Pietra.user.setPresence({
         status: 'dnd',
         game: {
-            name: `na BAD VIBES!`,
+            name: `Não irrite o Azu, você não vai gostar de ver ele irritado.`,
             url: 'https://www.twitch.tv/expextreadriano'
         }
 });
