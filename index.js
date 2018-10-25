@@ -42,7 +42,7 @@ function setActivity() {
 
 	 let status = [{name: `Não irrite o Azu, você não vai gostar de ver ele irritado.`, type: 'STREAMING', url: `https://www.twitch.tv/expextreadriano`},
               {name: `Project Legends`, type: 'WATCHING'},
-              {name: `com ${Number(message.guild.memberCount).toLocaleString()} membros`, type: 'PLAYING'}];
+              {name: `com ${Number(Pietra.guilds.get('393938377306800150').memberCount).toLocaleString()} membros`, type: 'PLAYING'}];
       let escolher = status[Math.floor(Math.random() * status.length)];
       Pietra.user.setPresence({game: escolher});
   }
