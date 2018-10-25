@@ -27,7 +27,7 @@ Pietra.on("message", message => {
    
   });
   
-  Pietra.on("ready", () => {
+  /*Pietra.on("ready", () => {
 Pietra.user.setPresence({
         status: 'dnd',
         game: {
@@ -35,6 +35,20 @@ Pietra.user.setPresence({
             url: 'https://www.twitch.tv/expextreadriano'
         }
 });
+});*/
+
+Pietra.on("ready", (message) => {
+function setActivity() {
+
+	 let status = [{name: `Não irrite o Azu, você não vai gostar de ver ele irritado.`, type: 'STREAMING', url: `https://www.twitch.tv/expextreadriano`},
+              {name: `Project Legends`, type: 'WATCHING'},
+              {name: `com ${Number(message.guild.memberCount).toLocaleString()} membros`, type: 'PLAYING'}];
+      let escolher = status[Math.floor(Math.random() * status.length)];
+      Pietra.user.setPresence({game: escolher});
+  }
+  
+  setActivity();
+  setInterval(() => setActivity(), 11000);
 });
 
 Pietra.login(process.env.atapo);
